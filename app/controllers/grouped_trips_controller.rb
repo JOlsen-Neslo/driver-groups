@@ -86,27 +86,6 @@ class GroupedTripsController < ApplicationController
       acc.except!(_name)
     end
 
-    # counted_trips.each do |_name, trips|
-    #   next unless trips.size > 1
-    #
-    #   farthermost_trip = trips.first
-    #   if type == 'location'
-    #     closest_trips = Trip.where(status: 0, time_slot: time_slot, grouped_trip_id: nil)
-    #                         .within_location(farthermost_trip.location_longitude, farthermost_trip.location_latitude)
-    #   else
-    #     closest_trips = Trip.where(status: 0, time_slot: time_slot, grouped_trip_id: nil)
-    #                         .within_destination(farthermost_trip.destination_longitude, farthermost_trip.destination_latitude)
-    #   end
-    #
-    #   next if closest_trips.empty?
-    #
-    #   counted_trips[_name+count.to_s] = trips if closest_trips.size > 4
-    #
-    #   trips_to_map = closest_trips.limit(4)
-    #   create_grouped_trip trips_to_map, time_slot, count
-    #   count += 1
-    # end
-
     count
   end
 
