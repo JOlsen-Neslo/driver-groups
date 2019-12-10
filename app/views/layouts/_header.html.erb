@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <%= link_to 'Driver Groups', root_path, id: "logo" %>
+        <nav>
+            <ul class="nav navbar-nav navbar-right">
+                <li><%= link_to 'Home', root_path %></li>
+                <% if logged_in? %>
+                    <li><%= link_to 'Grouped Trips', grouped_trips_path %></li>
+                    <li><%= link_to 'Trips', trips_path %></li>
+                    <li><%= link_to 'Profile', current_user %></li>
+                    <li><%= link_to 'Log Out', logout_path, method: "delete" %></li>
+                <% else %>
+                    <li><%= link_to 'Log In', login_path %></li>
+                <% end %>
+            </ul>
+        </nav>
+    </div>
+</header>

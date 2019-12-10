@@ -1,0 +1,62 @@
+<header>
+    <%= link_to '<< Back', trips_path, class: 'float-left' %>
+    <h1>Trip ID: <%= @trip.id %></h1>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="trip">
+            <section class="map-display">
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        const directionsService = new google.maps.DirectionsService();
+                        const directionsRenderer = new google.maps.DirectionsRenderer();
+                        const map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 10
+                        });
+                        calculateAndDisplayRoute(directionsService, directionsRenderer);
+                        directionsRenderer.setMap(map);
+                    }
+
+                    function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+                        directionsService.route(
+                            {
+                                origin: {query: '<%= @trip.location_latitude %>, <%= @trip.location_longitude %>'},
+                                destination: {query: '<%= @trip.destination_latitude %>, <%= @trip.destination_longitude %>'},
+                                travelMode: 'DRIVING'
+                            },
+                            function(response, status) {
+                                if (status === 'OK') {
+                                    directionsRenderer.setDirections(response);
+                                } else {
+                                    window.alert('Directions request failed due to ' + status);
+                                }
+                            });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIN5h-pSgfZVLwhfVPDkeUrZ5oreQPOuk&callback=initMap">
+                </script>
+            </section>
+            <section>
+                <dl>
+                    <dt>Pickup Location</dt>
+                    <dd><%= @trip.location_name %></dd>
+                    <dt>Pickup Location Co-Ordinates</dt>
+                    <dd>Lat: <%= @trip.location_latitude %> - Long: <%= @trip.location_longitude %></dd>
+                    <dt>Destination</dt>
+                    <dd><%= @trip.destination_name %></dd>
+                    <dt>Destination Co-Ordinates</dt>
+                    <dd>Lat: <%= @trip.destination_latitude %> - Long: <%= @trip.destination_longitude %></dd>
+                    <dt>Distance</dt>
+                    <dd><%= @trip.distance %></dd>
+                    <dt>Time Slot</dt>
+                    <dd><%= @trip.time_slot %></dd>
+                    <dt>Employee Name</dt>
+                    <dd><%= @trip.employee_name_id %></dd>
+                </dl>
+            </section>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<% provide(:title, 'Grouped Trips') %>
+<h1 class="text-center">Grouped Trips: <%= @time_slot %></h1>
+
+<div class='row'>
+    <div class='col-md-12'>
+        <dl>
+            <% @grouped_trips.each do |grouped_trip| %>
+                <dt><%= grouped_trip.tag %></dt>
+                <% grouped_trip.trips.each do |trip|%>
+                    <dd><%= trip.location_name %> --> <%= trip.destination_name %></dd>
+                <% end %>
+            <% end %>
+        </dl>
+    </div>
+</div>

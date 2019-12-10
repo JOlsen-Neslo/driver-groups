@@ -1,0 +1,29 @@
+<% provide(:title, 'Trips') %>
+<h1 class="text-center">All Trips</h1>
+
+<div class='row'>
+    <div class='col-md-12'>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Destination</th>
+                    <th>Status</th>
+                    <th>Time Slot</th>
+                    <th>Employee Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if @trips.any? %>
+                    <%= render @trips %>
+                <% else %>
+                    <tr class="text-center">
+                        <td colspan="6">There are no trips!</td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+        <%= will_paginate %>
+    </div>
+</div>
