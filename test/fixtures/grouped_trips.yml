@@ -1,9 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tag: MyString
-  user_id: 
+  id: 1
+  tag: 1
+  time_slot: 13
 
 two:
-  tag: MyString
-  user_id: 
+  id: 2
+  tag: 1
+  time_slot: 13

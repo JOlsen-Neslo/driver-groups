@@ -2,7 +2,7 @@ class GroupedTripsController < ApplicationController
   include SessionsHelper
   skip_before_action :verify_authenticity_token
 
-  before_action :logged_in_user, only: [:count, :show]
+  before_action :logged_in_user, only: [:show, :create]
 
   def index
     @slots = [
@@ -44,6 +44,12 @@ class GroupedTripsController < ApplicationController
   def show
     @time_slot = require_id
     @grouped_trips = GroupedTrip.where(time_slot: @time_slot)
+    unless @grouped_trips.any?
+      flash[:error] = 'Grouped trip cannot be found'
+      redirect_to grouped_trips_path
+    end
+
+    @grouped_trips
   end
 
   private

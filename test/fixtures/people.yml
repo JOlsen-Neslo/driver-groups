@@ -1,9 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+person:
   id: 1
-  name: 1
-
-two:
-  id: 1
-  name: 1
+  user_id: 1
+  date_of_birth:

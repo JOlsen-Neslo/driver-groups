@@ -8,7 +8,13 @@ class TripsController < ApplicationController
   end
 
   def show
-    @trip = Trip.find(require_id)
+    @trip = Trip.find_by(id: require_id)
+    if @trip.nil?
+      flash[:danger] = 'Trip cannot be found with that id.'
+      redirect_to trips_path
+    end
+
+    @trip
   end
 
   private

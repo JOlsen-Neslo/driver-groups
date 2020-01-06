@@ -10,4 +10,22 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  # Logs in a test user.
+  def log_in_as(user, options = {})
+    password = options[:password] || 'test'
+      post login_path, params: {
+          session: {
+              username: user.username,
+              password: password
+          }
+      }
+  end
+
+  private
+
+  # Returns true inside an integration test.
+  def integration_test?
+    defined?(post_via_redirect)
+  end
 end

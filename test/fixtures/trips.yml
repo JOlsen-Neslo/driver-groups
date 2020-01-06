@@ -1,29 +1,419 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  location_name: MyText
-  destination_name: MyText
-  distance: 1.5
-  timeslot: 1
-  employee_name: 1
-  location_latitude: 1.5
-  location_longitude: 1.5
-  destination_latitude: 1.5
-  destination_longitude: 1.5
-  grouped_trip_id: 
-  status: 1
-  distance_to_closest_trip: 1.5
+  location_name: Rosebank Mall, Cradock Avenue, Rosebank, Johannesburg, South Africa
+  destination_name: Parkhurst, Randburg, South Africa
+  distance: 3.736
+  time_slot: 5
+  employee_name_id: 7
+  location_latitude: -26.1464
+  location_longitude: 28.04147
+  destination_latitude: -26.1368
+  destination_longitude: 28.01568
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
 
 two:
-  location_name: MyText
-  destination_name: MyText
-  distance: 1.5
-  timeslot: 1
-  employee_name: 1
-  location_latitude: 1.5
-  location_longitude: 1.5
-  destination_latitude: 1.5
-  destination_longitude: 1.5
-  grouped_trip_id: 
-  status: 1
-  distance_to_closest_trip: 1.5
+  location_name: Rosebank Mall, Cradock Avenue, Rosebank, Johannesburg, South Africa
+  destination_name: Parkhurst, Randburg, South Africa
+  distance: 3.736
+  time_slot: 10
+  employee_name_id: 1
+  location_latitude: -26.1464
+  location_longitude: 28.04147
+  destination_latitude: -26.1368
+  destination_longitude: 28.01568
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+three:
+  location_name: 64 7th Street, Parktown, Johannesburg, South Africa
+  destination_name: 11 North Street, Illovo, Sandton, South Africa
+  distance: 5.421
+  time_slot: 5
+  employee_name_id: 56
+  location_latitude: -26.1697
+  location_longitude: 28.04904
+  destination_latitude: -26.1358
+  destination_longitude: 28.05008
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+thirty:
+  location_name: 34 Rudd Road, Illovo, Sandton, South Africa
+  destination_name: no 64 7th Avenue, Parkhurst, Randburg, South Africa
+  distance: 3.476
+  time_slot: 5
+  employee_name_id: 12
+  location_latitude: -26.1284
+  location_longitude: 28.0504
+  destination_latitude: -26.1452
+  destination_longitude: 28.03305
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+four:
+  location_name: 11 North Street, Illovo, Sandton, South Africa
+  destination_name: 64 7th Street, Parktown, Johannesburg, South Africa
+  distance: 4.376
+  time_slot: 8
+  employee_name_id: 56
+  location_latitude: -26.1358
+  location_longitude: 28.05008
+  destination_latitude: -26.1697
+  destination_longitude: 28.04904
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+five:
+  location_name: 11 North Street, Illovo, Sandton, South Africa
+  destination_name: 64 7th Street, Parktown, Johannesburg, South Africa
+  distance: 4.376
+  time_slot: 6
+  employee_name_id: 56
+  location_latitude: -26.1358
+  location_longitude: 28.05008
+  destination_latitude: -26.1697
+  destination_longitude: 28.04904
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+six:
+  location_name: Linden, Randburg, South Africa
+  destination_name: Rosebank, Johannesburg, South Africa
+  distance: 6.739
+  time_slot: 7
+  employee_name_id: 4
+  location_latitude: -26.1363
+  location_longitude: 27.99226
+  destination_latitude: -26.1438
+  destination_longitude: 28.04056
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+seven:
+  location_name: no 64 7th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 34 Rudd Road, Illovo, Sandton, South Africa
+  distance: 4.221
+  time_slot: 6
+  employee_name_id: 12
+  location_latitude: -26.1452
+  location_longitude: 28.03305
+  destination_latitude: -26.1284
+  destination_longitude: 28.0504
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+eight:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: Linden, Randburg, South Africa
+  distance: 3.263
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1363
+  destination_longitude: 27.99226
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+nine:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: Linden, Randburg, South Africa
+  distance: 3.263
+  time_slot: 6
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1363
+  destination_longitude: 27.99226
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+ten:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: Rosebank, Johannesburg, South Africa
+  distance: 3.322
+  time_slot: 6
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1438
+  destination_longitude: 28.04056
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+eleven:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  distance: 10.546
+  time_slot: 6
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.0882
+  destination_longitude: 28.0638
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twelve:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: Parkhurst, Randburg, South Africa
+  distance: 0.666
+  time_slot: 6
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1368
+  destination_longitude: 28.01568
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+thirteen:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: Linden, Randburg, South Africa
+  distance: 3.263
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1363
+  destination_longitude: 27.99226
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+fourteen:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: Rosebank, Johannesburg, South Africa
+  distance: 3.322
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1438
+  destination_longitude: 28.04056
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+fifteen:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  distance: 10.546
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.0882
+  destination_longitude: 28.0638
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+sixteen:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 135 Rivonia Road, Sandown, Sandton, South Africa
+  distance: 9.355
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1027
+  destination_longitude: 28.05944
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+seventeen:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  distance: 10.546
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.0882
+  destination_longitude: 28.0638
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+eighteen:
+  location_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  destination_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  distance: 10.715
+  time_slot: 8
+  employee_name_id: 11
+  location_latitude: -26.0882
+  location_longitude: 28.0638
+  destination_latitude: -26.1413
+  destination_longitude: 28.01697
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+nineteen:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 135 Rivonia Road, Sandown, Sandton, South Africa
+  distance: 9.355
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1027
+  destination_longitude: 28.05944
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 135 Rivonia Road, Sandown, Sandton, South Africa
+  distance: 9.355
+  time_slot: 7
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1027
+  destination_longitude: 28.05944
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-one:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  distance: 10.546
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.0882
+  destination_longitude: 28.0638
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-two:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  distance: 10.546
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.0882
+  destination_longitude: 28.0638
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-three:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 135 Rivonia Road, Sandown, Sandton, South Africa
+  distance: 9.355
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1027
+  destination_longitude: 28.05944
+
+twenty-four:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  distance: 10.546
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.0882
+  destination_longitude: 28.0638
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-five:
+  location_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 135 Rivonia Road, Sandown, Sandton, South Africa
+  distance: 9.355
+  time_slot: 5
+  employee_name_id: 11
+  location_latitude: -26.1413
+  location_longitude: 28.01697
+  destination_latitude: -26.1027
+  destination_longitude: 28.05944
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-six:
+  location_name: 34 Rudd Road, Illovo, Sandton, South Africa
+  destination_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  distance: 4.22
+  time_slot: 7
+  employee_name_id: 12
+  location_latitude: -26.1284
+  location_longitude: 28.0504
+  destination_latitude: -26.1413
+  destination_longitude: 28.01697
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-seven:
+  location_name: 7 on Middle, Middle Road, Morningside, Sandton, South Africa
+  destination_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  distance: 10.546
+  time_slot: 7
+  employee_name_id: 11
+  location_latitude: -26.0882
+  location_longitude: 28.0638
+  destination_latitude: -26.1413
+  destination_longitude: 28.01697
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-eight:
+  location_name: no 64 7th Avenue, Parkhurst, Randburg, South Africa
+  destination_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  distance: 9.355
+  time_slot: 7
+  employee_name_id: 11
+  location_latitude: -26.1452
+  location_longitude: 28.03305
+  destination_latitude: -26.1413
+  destination_longitude: 28.01697
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
+twenty-nine:
+  location_name: Linden, Randburg, South Africa
+  destination_name: 17 4th Avenue, Parkhurst, Randburg, South Africa
+  distance: 3.263
+  time_slot: 7
+  employee_name_id: 11
+  location_latitude: -26.1363
+  location_longitude: 27.99226
+  destination_latitude: -26.1413
+  destination_longitude: 28.01697
+  grouped_trip_id:
+  status: 0
+  distance_to_closest_trip: 0
+
